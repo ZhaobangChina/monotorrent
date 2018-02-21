@@ -1,4 +1,4 @@
-//
+ï»¿//
 // BEncodingTest.cs
 //
 // Authors:
@@ -48,7 +48,7 @@ namespace MonoTorrent.Common
         [Test]
         public void UTF8Test()
         {
-            string s = "ã";
+            string s = "ï¿½";
             BEncodedString str = s;
             Assert.AreEqual(s, str.Text);
         }

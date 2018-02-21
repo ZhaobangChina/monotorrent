@@ -51,12 +51,16 @@ namespace MonoTorrent.Common
         public static readonly string DhtClientVersion = "MO06";
 
         internal static  Version Version;
-		static string CreateClientVersion ()
-		{
-			AssemblyInformationalVersionAttribute versionAttr;
-			Assembly assembly = Assembly.GetExecutingAssembly ();
-			versionAttr = (AssemblyInformationalVersionAttribute) assembly.GetCustomAttributes (typeof (AssemblyInformationalVersionAttribute), false)[0];
-			Version = new Version(versionAttr.InformationalVersion);
+        static string CreateClientVersion()
+        {
+            AssemblyInformationalVersionAttribute versionAttr;
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            versionAttr = (AssemblyInformationalVersionAttribute)assembly.GetCustomAttributes(typeof(AssemblyInformationalVersionAttribute), false)[0];
+            string originVersionStr = versionAttr.InformationalVersion;
+            if (originVersionStr.IndexOf('-') >= 0)
+                Version = new Version(originVersionStr.Substring(0, originVersionStr.IndexOf('-')));
+            else
+                Version = new Version(originVersionStr);
 
 			    // 'MO' for MonoTorrent then four digit version number
             string version = string.Format ("{0}{1}{2}{3}", Math.Max (Version.Major, 0),
