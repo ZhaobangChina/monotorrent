@@ -2,11 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Copyright>Alan McGovern, Gregor Buguer;  MIT X11 Licensed</Copyright>
+    <Copyright>Copyright (c) 2018 Zhaoquan Huang, Alan McGovern</Copyright>
     <Product>MonoTorrent Common Library</Product>
-    <PackageId>MonoTorrent</PackageId>
-    <Authors />
-    <Company />
+    <PackageId>MonoTorrentCore</PackageId>
+    <Authors>Zhaoquan Huang, Alan McGovern</Authors>
+    <Company>Zhaobang China</Company>
+    <PackageLicenseUrl>https://github.com/ZhaobangChina/monotorrent/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ZhaobangChina/monotorrent</PackageProjectUrl>
+    <Description>MonoTorrent Common Library for .NET Standard 2.0</Description>
+    <Version>0.8.0-test</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -2,11 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Copyright>Alan McGovern, Olivier Dufour 2009</Copyright>
-    <Product>MonoTorrent DHT</Product>
-    <Company />
-    <Authors />
-    <Version>0.70.0</Version>
+    <Copyright>Copyright (c) 2018 Zhaoquan Huang, Alan McGovern</Copyright>
+    <Product>MonoTorrent DHT Library</Product>
+    <Company>Zhaobang China</Company>
+    <Authors>Zhaoquan Huang, Alan McGovern</Authors>
+    <Version>0.8.0-test</Version>
+    <PackageId>MonoTorrentCore.Dht</PackageId>
+    <Description>MonoTorrent DHT Library for .NET Standard 2.0</Description>
+    <PackageLicenseUrl>https://github.com/ZhaobangChina/monotorrent/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ZhaobangChina/monotorrent</PackageProjectUrl>
+    <AssemblyVersion>0.8.0.0</AssemblyVersion>
+    <FileVersion>0.8.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
